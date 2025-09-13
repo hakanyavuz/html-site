@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İletişim - FD İskele Asansör ve İnşaat Sistelei</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1e40af',
+secondary: '#f97316'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+</head><br>
+
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+<div class="border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 py-2">
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center space-x-6">
+<div class="flex items-center gap-2">
+<i class="ri-map-pin-line text-primary"></i>
+<span class="text-gray-600">Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D Sarıçam/Adana</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-mail-line text-primary"></i>
+<a href="mailto:info@fdiskele.com" class="text-gray-600 hover:text-primary transition-colors">info@fdiskele.com</a>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-facebook-line"></i>
+</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+	<span class="text-3xl font-['Pacifico'] text-primary"><img src="img/logo.jpg" width="84" height="80" class="logo"></span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Anasayfa</a>
+<a href="hizmetler.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Hizmetler</a>
+<a href="referanslar.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Referanslar</a>
+<a href="hakkimizda.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Hakkımızda</a>
+<a href="iletisim.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">İletişim</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex items-center gap-2 border-r border-gray-200 pr-4">
+<i class="ri-customer-service-line text-primary text-xl"></i>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500">7/24 Destek Hattı</span>
+<a href="tel:+905432550133" class="text-primary font-semibold">+90 543 255 01 33</a>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap hidden md:block">
+Ücretsiz Keşif
+</button>
+<button class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h1 class="text-6xl font-bold text-gray-900 mb-6">İletişim</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Uzman ekibimizle iletişime geçin. Size en uygun çözümü sunmak için buradayız.
+</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2">
+<div class="bg-white rounded-2xl shadow-sm p-8 mb-8">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Bize Mesaj Gönderin</h2>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Ad Soyad *</label>
+<input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors" placeholder="Adınız ve soyadınız">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">E-posta Adresi *</label>
+<input type="email" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors" placeholder="ornek@email.com">
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Telefon Numarası</label>
+<input type="tel" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors" placeholder="+90 5XX XXX XX XX">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Konu</label>
+<div class="relative">
+<button type="button" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors text-left bg-white subject-dropdown-btn">
+<span class="subject-text text-gray-500">Konu seçiniz</span>
+<i class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2"></i>
+</button>
+<div class="absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-lg mt-1 shadow-lg hidden z-10 subject-dropdown">
+<div class="py-2">
+<button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 subject-option" data-value="asansor">Asansör Hizmetleri</button>
+<button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 subject-option" data-value="insaat">İnşaat Hizmetleri</button>
+<button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 subject-option" data-value="bakim">Bakım ve Onarım</button>
+<button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 subject-option" data-value="modernizasyon">Modernizasyon</button>
+<button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 subject-option" data-value="diger">Diğer</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Mesajınız *</label>
+<textarea rows="6" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-colors resize-none" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..."></textarea>
+</div>
+<div class="flex items-start gap-3">
+<div class="relative">
+<input type="checkbox" id="kvkk" class="sr-only kvkk-checkbox">
+<div class="w-5 h-5 border-2 border-gray-300 rounded bg-white cursor-pointer kvkk-box flex items-center justify-center">
+<i class="ri-check-line text-white text-sm hidden kvkk-check"></i>
+</div>
+</div>
+<label for="kvkk" class="text-sm text-gray-600 cursor-pointer">
+<a href="#" class="text-primary hover:underline">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.
+</label>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+Mesajı Gönder
+</button>
+</form>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-8">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Harita</h2>
+<div class="relative h-80 rounded-lg overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-cover" style="background-image: url('https://maps.app.goo.gl/zruAubEJQuau1UV69');">
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1592.5702965962976!2d35.40592337854211!3d37.03029399508251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDAxJzQ5LjEiTiAzNcKwMjQnMjUuMiJF!5e0!3m2!1str!2str!4v1757679243000!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="bg-white rounded-2xl shadow-sm p-8">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">İletişim Bilgileri</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="ri-map-pin-line text-xl text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900 mb-1">Adres</h3>
+<p class="text-gray-600">Şahintepe Mahallesi<br>Kozan Bulvarı Ebiri Apt. No 250/D<br>Sarıçam/Adana</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="ri-phone-line text-xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900 mb-1">Telefon</h3>
+<p class="text-gray-600">
+<a href="tel:+905432550133" class="hover:text-primary">+90 543 255 01 33</a>
+</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="ri-mail-line text-xl text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900 mb-1">E-posta</h3>
+<p class="text-gray-600">
+<a href="mailto:info@fdiskele.com" class="hover:text-primary">info@fdiskele.com</a><br>
+<a href="mailto:muhasebe@fdiskele.com" class="hover:text-primary">muhasebe@fdiskele.com</a><br>
+<a href="mailto:proje@fdiskele.com" class="hover:text-primary">proje@fdiskele.com</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-8">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Çalışma Saatleri</h2>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="font-medium text-gray-700">Pazartesi - Cuma</span>
+<span class="text-gray-600">08:00 - 18:00</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="font-medium text-gray-700">Cumartesi</span>
+<span class="text-gray-600">09:00 - 15:00</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="font-medium text-gray-700">Pazar</span>
+<span class="text-red-500 font-medium">Kapalı</span>
+</div>
+</div>
+</div>
+<div class="bg-red-50 border border-red-200 rounded-2xl p-8">
+<h2 class="text-2xl font-bold text-red-800 mb-4">
+<i class="ri-alarm-warning-line mr-2"></i>
+Acil Servis
+</h2>
+<p class="text-red-700 mb-4">7/24 acil durum hattımız hizmetinizde</p>
+<div class="space-y-3">
+<a href="tel:+905432550133" class="flex items-center gap-3 text-red-800 font-semibold hover:text-red-600">
+<i class="ri-phone-line text-xl"></i>
++90 543 255 01 33
+</a>
+<a href="https://wa.me/+905432550133" class="flex items-center gap-3 text-red-800 font-semibold hover:text-red-600">
+<i class="ri-whatsapp-line text-xl"></i>
+WhatsApp Destek
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Departmanlarımız</h2>
+<p class="text-xl text-gray-600">Uzman ekiplerimizle doğrudan iletişim kurun</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-2xl shadow-sm p-8 text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+<i class="ri-shopping-cart-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Satış Departmanı</h3>
+<div class="space-y-2 text-sm text-gray-600">
+<p class="font-medium">Mehmet Özkan</p>
+<p>Satış Müdürü</p>
+<a href="tel:+905432550133" class="block text-primary hover:underline">+90 543 255 01 33&nbsp;</a>
+<a href="mailto:muhasebe@fdiskele.com" class="block text-primary hover:underline">muhasebe@fdiskele.com</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-8 text-center">
+<div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+<i class="ri-tools-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Teknik Servis</h3>
+<div class="space-y-2 text-sm text-gray-600">
+<p class="font-medium">Ali Yılmaz</p>
+<p>Teknik Şef</p>
+<a href="tel:+905432550133" class="block text-primary hover:underline">+90 543 255 01 33</a>
+<a href="mailto:c.demiryurek@fdiskele.com" class="block text-primary hover:underline">c.demiryurek@fdiskele.com</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-8 text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+<i class="ri-customer-service-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">Müşteri Hizmetleri</h3>
+<div class="space-y-2 text-sm text-gray-600">
+<p class="font-medium">Ayşe Demir</p>
+<p>Müşteri Temsilcisi</p>
+<a href="tel:+905432550133" class="block text-primary hover:underline">+90 543 255 01 33</a>
+<a href="mailto:info@fdiskele.com" class="block text-primary hover:underline">info@fdiskele.com</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-8 text-center">
+<div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+<i class="ri-team-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4">İnsan Kaynakları</h3>
+<div class="space-y-2 text-sm text-gray-600">
+<p class="font-medium">Fatma Kaya</p>
+<p>İK Uzmanı</p>
+<a href="tel:+905432550133" class="block text-primary hover:underline">+90 543 255 01 33</a>
+<a href="mailto:proje@fdiskele.com" class="block text-primary hover:underline">proje@fdiskele.com</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold mb-6">Hemen İletişime Geçin</h2>
+<p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+Uzman ekibimiz size en uygun çözümü sunmak için hazır. Ücretsiz keşif ve detaylı fiyat teklifi için bizi arayın.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="tel:+905432550133" class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap inline-flex items-center gap-2">
+<i class="ri-phone-line"></i>
+Hemen Ara
+</a>
+<a href="https://wa.me/905432550133" class="border-2 border-white text-white px-8 py-4 !rounded-button font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap inline-flex items-center gap-2">
+<i class="ri-whatsapp-line"></i>
+WhatsApp
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center mb-6">
+<span class="text-3xl font-['Pacifico'] text-primary"><img src="img/logo.jpg" width="84" height="80" class="logo"></span>
+</div>
+<p class="text-gray-300 mb-6 leading-relaxed">
+25 yıllık deneyimimizle asansör ve inşaat sektöründe güvenilir çözümler sunuyoruz.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Hizmetlerimiz</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Asansör Montajı</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Bakım ve Onarım</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Modernizasyon</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">İnşaat Hizmetleri</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">İskele Sistemleri</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Güvenlik Sistemleri</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Hızlı Bağlantılar</h3>
+<ul class="space-y-3">
+<li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Anasayfa</a></li>
+<li><a href="hakkimizda.html" data-readdy="true" class="text-gray-300 hover:text-white transition-colors">Hakkımızda</a></li>
+<li><a href="referanslar.html" class="text-gray-300 hover:text-white transition-colors">Referanslar</a></li>
+<li><a href="hizmerler.html" class="text-gray-300 hover:text-white transition-colors">Hizmetler</a></li>
+<li><a href="iletisim.html" data-readdy="true" class="text-gray-300 hover:text-white transition-colors">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">İletişim Bilgileri</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<i class="ri-map-pin-line text-secondary mt-1"></i>
+<div>
+<p class="text-gray-300">Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D</p>
+<p class="text-gray-300">Sarıçam/Adana&nbsp;</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-secondary"></i>
+<a href="tel:+905432550133" class="text-gray-300 hover:text-white">+90 543 255 01 33</a>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-secondary"></i>
+<a href="mailto:info@fdiskele.com" class="text-gray-300 hover:text-white">info@fdiskele.com</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">© 2024 FD İskele Asansör ve İnşaat. Tüm hakları saklıdır.<a href="hakanyavuz.net.tr">Tasarım Yavuz Bilişim</a></p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="dropdown-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const dropdownBtn = document.querySelector('.subject-dropdown-btn');
+const dropdown = document.querySelector('.subject-dropdown');
+const subjectText = document.querySelector('.subject-text');
+const options = document.querySelectorAll('.subject-option');
+dropdownBtn.addEventListener('click', function() {
+dropdown.classList.toggle('hidden');
+});
+options.forEach(option => {
+option.addEventListener('click', function() {
+const value = this.getAttribute('data-value');
+const text = this.textContent;
+subjectText.textContent = text;
+subjectText.classList.remove('text-gray-500');
+subjectText.classList.add('text-gray-900');
+dropdown.classList.add('hidden');
+});
+});
+document.addEventListener('click', function(e) {
+if (!dropdownBtn.contains(e.target) && !dropdown.contains(e.target)) {
+dropdown.classList.add('hidden');
+}
+});
+});
+</script>
+<script id="directions-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const directionsBtn = document.getElementById('getDirectionsBtn');
+const address = "Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D Sarıçam/Adana";
+
+directionsBtn.addEventListener('click', function() {
+    const encodedAddress = encodeURIComponent(address);
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+    window.open(mapsUrl, '_blank');
+});
+});
+</script>
+
+<script id="checkbox-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const checkbox = document.querySelector('.kvkk-checkbox');
+const checkboxBox = document.querySelector('.kvkk-box');
+const checkIcon = document.querySelector('.kvkk-check');
+checkboxBox.addEventListener('click', function() {
+checkbox.checked = !checkbox.checked;
+if (checkbox.checked) {
+checkboxBox.classList.add('bg-primary', 'border-primary');
+checkboxBox.classList.remove('border-gray-300');
+checkIcon.classList.remove('hidden');
+} else {
+checkboxBox.classList.remove('bg-primary', 'border-primary');
+checkboxBox.classList.add('border-gray-300');
+checkIcon.classList.add('hidden');
+}
+});
+});
+</script>
+</body>
+</html>

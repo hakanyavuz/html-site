@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern İskele Sistemi - Proje Detayları | FD Asansör ve İnşaat</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1e40af',
+secondary: '#f97316'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+</head><br>
+
+<body class="bg-white">
+
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+<div class="border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 py-2">
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center space-x-6">
+<div class="flex items-center gap-2">
+<i class="ri-map-pin-line text-primary"></i>
+<span class="text-gray-600">Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D Sarıçam/Adana</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-mail-line text-primary"></i>
+<a href="mailto:info@fdiskele.com" class="text-gray-600 hover:text-primary transition-colors">info@fdiskele.com</a>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-facebook-line"></i>
+</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+	<span class="text-3xl font-['Pacifico'] text-primary"><img src="img/logo.jpg" width="84" height="80" class="logo"></span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Anasayfa</a>
+<a href="hizmetler.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Hizmetler</a>
+<a href="referanslar.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Referanslar</a>
+<a href="hakkimizda.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Hakkımızda</a>
+<a href="iletisim.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">İletişim</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex items-center gap-2 border-r border-gray-200 pr-4">
+<i class="ri-customer-service-line text-primary text-xl"></i>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500">7/24 Destek Hattı</span>
+<a href="tel:+905432550133" class="text-primary font-semibold">+90 543 255 01 33</a>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap hidden md:block">
+Ücretsiz Keşif
+</button>
+<button class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Project Header -->
+<section class="pt-32 pb-8 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center gap-4 mb-6">
+<a href="index.html" data-readdy="true" class="w-10 h-10 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-arrow-left-line text-xl text-gray-600"></i>
+</a>
+<div>
+<h1 class="text-4xl font-bold text-gray-900">Modern İskele Sistemi</h1>
+<p class="text-gray-600 mt-2">İstanbul Kadıköy • Tamamlanma Tarihi: Kasım 2023</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Main Project Image -->
+<section class="pb-8">
+<div class="max-w-7xl mx-auto px-6">
+<div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[16/9] cursor-pointer" onclick="openLightbox(0)">
+<img src="./img/1af646b9030aa208e127fb1f364c8d90.jpg"
+alt="Modern İskele Sistemi Ana Görsel"
+class="w-full h-full object-cover object-top">
+<div class="absolute top-4 right-4 bg-black/50 text-white px-3 py-2 rounded-lg text-sm">
+<i class="ri-zoom-in-line mr-2"></i>Büyütmek için tıklayın
+</div>
+</div>
+</div>
+</section>
+
+<!-- Project Gallery -->
+<section class="pb-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex gap-4 overflow-x-auto pb-4">
+<div class="flex-shrink-0 w-48 h-32 bg-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="openLightbox(1)">
+<img src="./img/0b6f47c6d9b9d8b833a0f9b541249d7e.jpg"
+alt="İskele Kurulum Süreci"
+class="w-full h-full object-cover object-top hover:scale-105 transition-transform">
+</div>
+<div class="flex-shrink-0 w-48 h-32 bg-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="openLightbox(2)">
+<img src="./img/722a58c48fcadf056cfa54d590ad89d7.jpg"
+alt="İskele Detayları"
+class="w-full h-full object-cover object-top hover:scale-105 transition-transform">
+</div>
+<div class="flex-shrink-0 w-48 h-32 bg-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="openLightbox(3)">
+<img src="./img/39dedbfb454aa6585d2d464121487ad8.jpg"
+alt="Güvenlik Önlemleri"
+class="w-full h-full object-cover object-top hover:scale-105 transition-transform">
+</div>
+<div class="flex-shrink-0 w-48 h-32 bg-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="openLightbox(4)">
+<img src="./img/3f86860923cdee93b0f54b6fc07c4518.jpg"
+alt="Tamamlanmış Proje"
+class="w-full h-full object-cover object-top hover:scale-105 transition-transform">
+</div>
+<div class="flex-shrink-0 w-48 h-32 bg-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="openLightbox(5)">
+<img src="./img/790f92b44b1dc54179e5cfde215b6fdc.jpg"
+alt="Malzeme Organizasyonu"
+class="w-full h-full object-cover object-top hover:scale-105 transition-transform">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Project Details -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2">
+<div class="mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Proje Hakkında</h2>
+<div class="prose prose-lg text-gray-600 leading-relaxed">
+<p class="mb-4">
+İstanbul Kadıköy'de bulunan 12 katlı modern ofis binasının cephe yenileme çalışmaları için tasarlanan bu iskele sistemi, en yüksek güvenlik standartlarını karşılayacak şekilde planlanmış ve uygulanmıştır. Proje, binanın tüm cephesini kapsayan kapsamlı bir iskele çözümü sunmaktadır.
+</p>
+<p class="mb-4">
+Toplam 2.400 m² alan kaplayan iskele sistemi, çelik konstrüksiyon malzemeler kullanılarak inşa edilmiştir. Sistem, hem işçi güvenliğini maksimum düzeyde sağlamak hem de çalışma verimliliğini artırmak amacıyla özel olarak tasarlanmıştır.
+</p>
+<p>
+Proje süresince, tüm güvenlik protokolleri titizlikle uygulanmış ve düzenli denetimler gerçekleştirilmiştir. Çalışmalar 45 gün gibi kısa bir sürede tamamlanarak müşteri memnuniyeti sağlanmıştır.
+</p>
+</div>
+</div>
+
+<div class="mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Proje Süreci</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="text-primary font-bold">1</span>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Keşif ve Planlama</h3>
+<p class="text-gray-600">Bina yapısının detaylı analizi ve iskele sisteminin tasarımı</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="text-primary font-bold">2</span>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Malzeme Temini</h3>
+<p class="text-gray-600">Yüksek kaliteli çelik iskele malzemelerinin tedarik edilmesi</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="text-secondary font-bold">3</span>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Montaj Çalışmaları</h3>
+<p class="text-gray-600">Uzman ekip tarafından güvenli ve hızlı montaj işlemleri</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="text-secondary font-bold">4</span>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Güvenlik Kontrolü</h3>
+<p class="text-gray-600">Tüm güvenlik standartlarının kontrol edilmesi ve onaylanması</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="bg-gray-50 p-8 rounded-2xl mb-8">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Teknik Özellikler</h3>
+<div class="space-y-4">
+<div class="flex justify-between">
+<span class="text-gray-600">Toplam Alan</span>
+<span class="font-semibold">2.400 m²</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Yükseklik</span>
+<span class="font-semibold">42 metre</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Katman Sayısı</span>
+<span class="font-semibold">12 katman</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Taşıma Kapasitesi</span>
+<span class="font-semibold">750 kg/m²</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Güvenlik Sınıfı</span>
+<span class="font-semibold">Class 6</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Proje Süresi</span>
+<span class="font-semibold">45 gün</span>
+</div>
+</div>
+</div>
+
+<div class="bg-white border border-gray-200 p-8 rounded-2xl">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Kullanılan Malzemeler</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Galvanizli çelik iskele boruları</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Ayarlanabilir çelik ayaklar</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Anti-slip çelik platformlar</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Güvenlik korkulukları</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Çapraz destek elemanları</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Güvenlik ağları</span>
+</li>
+<li class="flex items-center gap-3">
+<i class="ri-check-line text-primary"></i>
+<span class="text-gray-700">Çelik kenetleme sistemleri</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Customer Reviews -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Müşteri Yorumları</h2>
+<div class="flex gap-6 overflow-x-auto pb-4">
+<div class="flex-shrink-0 w-80 bg-white p-6 rounded-2xl shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="text-primary font-bold">MK</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-900">Mehmet Kaya</h4>
+<p class="text-sm text-gray-500">Proje Müdürü</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600 leading-relaxed">
+"FD Asansör ekibi ile çalışmak gerçekten mükemmeldi. İskele sistemini zamanında ve güvenlik standartlarına uygun şekilde kurdular. Profesyonel yaklaşımları sayesinde projemiz sorunsuz tamamlandı."
+</p>
+<p class="text-sm text-gray-400 mt-4">15 Kasım 2023</p>
+</div>
+
+<div class="flex-shrink-0 w-80 bg-white p-6 rounded-2xl shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+<span class="text-secondary font-bold">AY</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-900">Ayşe Yılmaz</h4>
+<p class="text-sm text-gray-500">İnşaat Mühendisi</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600 leading-relaxed">
+"Güvenlik konusunda hiçbir taviz vermeyen, kaliteli malzeme kullanan bir firma. İskele sisteminin stabilitesi ve güvenliği mükemmeldi. Kesinlikle tavsiye ederim."
+</p>
+<p class="text-sm text-gray-400 mt-4">22 Kasım 2023</p>
+</div>
+
+<div class="flex-shrink-0 w-80 bg-white p-6 rounded-2xl shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="text-primary font-bold">EÖ</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-900">Emre Özkan</h4>
+<p class="text-sm text-gray-500">Şantiye Şefi</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600 leading-relaxed">
+"Çok deneyimli ve güvenilir bir ekip. İskele kurulumu sırasında tüm güvenlik önlemlerini aldılar. Çalışanlarımız rahat ve güvenli bir şekilde çalışabildi."
+</p>
+<p class="text-sm text-gray-400 mt-4">28 Kasım 2023</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Similar Projects -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Benzer Projeler</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[4/3] mb-4">
+<img src="./img/85666c483d9fced0e7c44d686adbaf57.jpg"
+alt="Ticari Bina İskelesi"
+class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Ticari Merkez İskele Sistemi</h3>
+<p class="text-gray-600 mb-3">İstanbul Şişli'de 15 katlı ticari merkez için özel tasarım iskele sistemi kurulumu.</p>
+<div class="flex items-center text-sm text-gray-500">
+<i class="ri-map-pin-line mr-2"></i>
+<span>İstanbul Şişli • 2023</span>
+</div>
+</div>
+
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[4/3] mb-4">
+<img src="./img/0db62df2c1a714f240b446b0ec41a17a.jpg"
+alt="Konut Projesi İskelesi"
+class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Konut Kompleksi İskelesi</h3>
+<p class="text-gray-600 mb-3">Ankara Çankaya'da 8 katlı konut kompleksi cephe yenileme iskele çalışması.</p>
+<div class="flex items-center text-sm text-gray-500">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Ankara Çankaya • 2023</span>
+</div>
+</div>
+
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-2xl bg-gray-200 aspect-[4/3] mb-4">
+<img src="./img/e170e6c720bc926a5065a49e1cfbcc9c.jpg"
+alt="Endüstriyel İskele"
+class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Endüstriyel Tesis İskelesi</h3>
+<p class="text-gray-600 mb-3">İzmit'te endüstriyel tesis bakım çalışmaları için özel iskele sistemi.</p>
+<div class="flex items-center text-sm text-gray-500">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Kocaeli İzmit • 2022</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Form -->
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center mb-6">
+<span class="text-3xl font-['Pacifico'] text-primary"><img src="img/logo.jpg" width="84" height="80" class="logo"></span>
+</div>
+<p class="text-gray-300 mb-6 leading-relaxed">
+25 yıllık deneyimimizle asansör ve inşaat sektöründe güvenilir çözümler sunuyoruz.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Hizmetlerimiz</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Asansör Montajı</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Bakım ve Onarım</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Modernizasyon</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">İnşaat Hizmetleri</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">İskele Sistemleri</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Güvenlik Sistemleri</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Hızlı Bağlantılar</h3>
+<ul class="space-y-3">
+<li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Anasayfa</a></li>
+<li><a href="hakkimizda.html" data-readdy="true" class="text-gray-300 hover:text-white transition-colors">Hakkımızda</a></li>
+<li><a href="referanslar.html" class="text-gray-300 hover:text-white transition-colors">Referanslar</a></li>
+<li><a href="hizmetler.html" class="text-gray-300 hover:text-white transition-colors">Hizmetler</a></li>
+<li><a href="iletisim.html" data-readdy="true" class="text-gray-300 hover:text-white transition-colors">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">İletişim Bilgileri</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<i class="ri-map-pin-line text-secondary mt-1"></i>
+<div>
+<p class="text-gray-300">Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D</p>
+<p class="text-gray-300">Sarıçam/Adana&nbsp;</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-secondary"></i>
+<a href="tel:+905432550133" class="text-gray-300 hover:text-white">+90 543 255 01 33</a>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-secondary"></i>
+<a href="mailto:info@fdiskele.com" class="text-gray-300 hover:text-white">info@fdiskele.com</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">© 2024 FD İskele Asansör ve İnşaat. Tüm hakları saklıdır.<a href="hakanyavuz.net.tr">Tasarım Yavuz Bilişim</a></p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center">
+<div class="relative max-w-6xl max-h-full p-4">
+<button onclick="closeLightbox()" class="absolute top-4 right-4 w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10">
+<i class="ri-close-line text-xl"></i>
+</button>
+<img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain">
+<button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors">
+<i class="ri-arrow-left-line text-xl"></i>
+</button>
+<button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+
+<script id="lightbox-functionality">
+const images = [
+'./img/1af646b9030aa208e127fb1f364c8d90.jpg',
+'./img/0b6f47c6d9b9d8b833a0f9b541249d7e.jpg',
+'./img/722a58c48fcadf056cfa54d590ad89d7.jpg',
+'./img/39dedbfb454aa6585d2d464121487ad8.jpg',
+'./img/3f86860923cdee93b0f54b6fc07c4518.jpg',
+'./img/790f92b44b1dc54179e5cfde215b6fdc.jpg'
+];
+
+let currentImageIndex = 0;
+
+function openLightbox(index) {
+currentImageIndex = index;
+document.getElementById('lightbox').classList.remove('hidden');
+document.getElementById('lightbox').classList.add('flex');
+document.getElementById('lightbox-image').src = images[index];
+document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+document.getElementById('lightbox').classList.add('hidden');
+document.getElementById('lightbox').classList.remove('flex');
+document.body.style.overflow = 'auto';
+}
+
+function nextImage() {
+currentImageIndex = (currentImageIndex + 1) % images.length;
+document.getElementById('lightbox-image').src = images[currentImageIndex];
+}
+
+function prevImage() {
+currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+document.getElementById('lightbox-image').src = images[currentImageIndex];
+}
+
+document.addEventListener('keydown', function(e) {
+if (e.key === 'Escape') closeLightbox();
+if (e.key === 'ArrowRight') nextImage();
+if (e.key === 'ArrowLeft') prevImage();
+});
+</script>
+
+<script id="form-interactions">
+function toggleDropdown() {
+const dropdown = document.getElementById('dropdown');
+dropdown.classList.toggle('hidden');
+}
+
+function toggleCheckbox() {
+const checkbox = document.querySelector('.checkbox-custom');
+const icon = checkbox.querySelector('i');
+
+if (checkbox.classList.contains('bg-primary')) {
+checkbox.classList.remove('bg-primary', 'border-primary');
+checkbox.classList.add('border-gray-300');
+icon.classList.add('hidden');
+} else {
+checkbox.classList.add('bg-primary', 'border-primary');
+checkbox.classList.remove('border-gray-300');
+icon.classList.remove('hidden');
+}
+}
+
+document.addEventListener('click', function(e) {
+const dropdown = document.getElementById('dropdown');
+if (!e.target.closest('.relative')) {
+dropdown.classList.add('hidden');
+}
+});
+</script>
+
+</body>
+</html>

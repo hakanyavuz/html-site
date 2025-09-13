@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lüks Rezidans Asansörü - Proje Detayları | FD iskele Asansör ve İnşaat sistemleri</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1e40af',
+secondary: '#f97316'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+</head><br>
+
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+<div class="border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 py-2">
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center space-x-6">
+<div class="flex items-center gap-2">
+<i class="ri-map-pin-line text-primary"></i>
+<span class="text-gray-600">Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D Sarıçam/Adana</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-mail-line text-primary"></i>
+<a href="mailto:info@fdiskele.com" class="text-gray-600 hover:text-primary transition-colors">info@fdiskele.com</a>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-facebook-line"></i>
+</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="text-gray-600 hover:text-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+	<span class="text-3xl font-['Pacifico'] text-primary"><img src="img/logo.jpg" width="84" height="80" class="logo"></span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Anasayfa</a>
+<a href="hizmetler.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Hizmetler</a>
+<a href="referanslar.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Referanslar</a>
+<a href="hakkimizda.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">Hakkımızda</a>
+<a href="iletisim.html" data-readdy="true" class="text-gray-700 hover:text-primary transition-colors">İletişim</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex items-center gap-2 border-r border-gray-200 pr-4">
+<i class="ri-customer-service-line text-primary text-xl"></i>
+<div class="flex flex-col">
+<span class="text-xs text-gray-500">7/24 Destek Hattı</span>
+<a href="tel:+905432550133" class="text-primary font-semibold">+90 543 255 01 33</a>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap hidden md:block">
+Ücretsiz Keşif
+</button>
+<button class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Project Hero -->
+<section class="pt-32 pb-12 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-8">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Lüks Rezidans Asansörü</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">İstanbul Maslak'ta gerçekleştirdiğimiz prestijli rezidans projesi - Modern teknoloji ve lüks tasarımın mükemmel birleşimi</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 text-sm">
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full">Tamamlandı</span>
+<span class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">İstanbul Maslak</span>
+<span class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">2023</span>
+<span class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full">Lüks Asansör</span>
+</div>
+</div>
+</section>
+
+<!-- Project Gallery -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="relative">
+<div class="gallery-container overflow-hidden rounded-2xl">
+<div class="gallery-slide active">
+<img src="./img/e40a8eadd95b77e6220267519e902646.jpg" 
+alt="Lüks Asansör İç Görünüm" 
+class="w-full h-96 md:h-[600px] object-cover object-center">
+<div class="absolute bottom-6 left-6 bg-black/50 text-white px-4 py-2 rounded-lg">
+<p class="text-sm">Lüks iç tasarım ve premium malzemeler</p>
+</div>
+</div>
+<div class="gallery-slide">
+<img src="img/c0a065b2b661582ad40969e086080dcd.jpg" 
+alt="Akıllı Kontrol Paneli" 
+class="w-full h-96 md:h-[600px] object-cover object-center">
+<div class="absolute bottom-6 left-6 bg-black/50 text-white px-4 py-2 rounded-lg">
+<p class="text-sm">Akıllı kontrol sistemi ve dokunmatik panel</p>
+</div>
+</div>
+<div class="gallery-slide">
+<img src="img/b1de0cd98b9a8c0b73f51e291ae8ef59.jpg" 
+alt="Asansör Şaft Görünümü" 
+class="w-full h-96 md:h-[600px] object-cover object-center">
+<div class="absolute bottom-6 left-6 bg-black/50 text-white px-4 py-2 rounded-lg">
+<p class="text-sm">Modern şaft tasarımı ve cam detaylar</p>
+</div>
+</div>
+<div class="gallery-slide">
+<img src="img/7ea64721d3dd868aacdbccacfef494ed.jpg" 
+alt="Lobi ve Giriş" 
+class="w-full h-96 md:h-[600px] object-cover object-center">
+<div class="absolute bottom-6 left-6 bg-black/50 text-white px-4 py-2 rounded-lg">
+<p class="text-sm">Şık lobi tasarımı ve asansör girişi</p>
+</div>
+</div>
+</div>
+<button class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-colors gallery-prev">
+<i class="ri-arrow-left-line text-xl text-gray-700"></i>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-colors gallery-next">
+<i class="ri-arrow-right-line text-xl text-gray-700"></i>
+</button>
+<div class="absolute bottom-6 right-6 bg-black/50 text-white px-3 py-1 rounded-lg text-sm">
+<span class="current-slide">1</span> / <span class="total-slides">4</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Project Details -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Proje Hakkında</h2>
+<div class="prose prose-lg max-w-none text-gray-600 leading-relaxed">
+<p class="mb-6">
+İstanbul Maslak'ta bulunan 32 katlı lüks rezidans kompleksinde gerçekleştirdiğimiz bu prestijli proje, modern asansör teknolojisi ile lüks tasarımın mükemmel bir örneğidir. Toplam 4 adet yolcu asansörü ve 1 adet yük asansörü kurulumu yapılan projede, en son teknoloji ürünleri kullanılmıştır.
+</p>
+<p class="mb-6">
+Proje kapsamında, binanın mimari karakterine uygun olarak özel tasarlanmış kabin iç tasarımları, akıllı kontrol sistemleri ve enerji verimli motorlar tercih edilmiştir. Özellikle sakinlerin konforunu ön planda tutan tasarım anlayışı ile ses yalıtımı, titreşim kontrolü ve hızlı ulaşım imkanları sağlanmıştır.
+</p>
+<p>
+25 yıllık deneyimimizi bu projede de kanıtlayarak, müşteri memnuniyeti odaklı çalışma prensibimizle zamanında ve kaliteli teslimat gerçekleştirdik. Proje sonrasında da 7/24 teknik destek hizmeti sunmaya devam ediyoruz.
+</p>
+</div>
+</div>
+<div>
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Teknik Özellikler</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="text-gray-600">Kapasite</span>
+<span class="font-semibold text-gray-900">1000 kg (13 kişi)</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="text-gray-600">Hız</span>
+<span class="font-semibold text-gray-900">1.6 m/s</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="text-gray-600">Kat Sayısı</span>
+<span class="font-semibold text-gray-900">32 Kat + Bodrum</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="text-gray-600">Kabin Boyutu</span>
+<span class="font-semibold text-gray-900">1400x1100 mm</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="text-gray-600">Kapı Genişliği</span>
+<span class="font-semibold text-gray-900">900 mm</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-gray-100">
+<span class="text-gray-600">Motor Tipi</span>
+<span class="font-semibold text-gray-900">Gearless Traction</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-gray-600">Kontrol Sistemi</span>
+<span class="font-semibold text-gray-900">VVVF Mikroişlemci</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Materials Used -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Kullanılan Malzemeler</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+<i class="ri-copper-diamond-line text-xl text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Paslanmaz Çelik Kabin</h3>
+<p class="text-gray-600">AISI 304 kalite paslanmaz çelik, fırçalanmış yüzey işlemi</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<i class="ri-lightbulb-line text-xl text-secondary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">LED Aydınlatma</h3>
+<p class="text-gray-600">Enerji verimli LED panel aydınlatma sistemi</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+<i class="ri-window-line text-xl text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Temperli Cam Paneller</h3>
+<p class="text-gray-600">8mm temperli güvenlik camı, şeffaf ve mat seçenekleri</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<i class="ri-settings-3-line text-xl text-secondary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Alman Makine Grubu</h3>
+<p class="text-gray-600">Yüksek kalite Alman marka gearless motor sistemi</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+<i class="ri-smartphone-line text-xl text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Akıllı Kontrol Paneli</h3>
+<p class="text-gray-600">Dokunmatik LCD ekran, sesli anons sistemi</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<i class="ri-shield-check-line text-xl text-secondary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Güvenlik Sistemleri</h3>
+<p class="text-gray-600">Çoklu güvenlik sensörleri, acil durum telefonu</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Project Timeline -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Proje Süreci</h2>
+<div class="relative">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary/20"></div>
+<div class="space-y-12">
+<div class="flex items-center">
+<div class="flex-1 pr-8 text-right">
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Proje Başlangıcı ve Keşif</h3>
+<p class="text-gray-600 mb-3">Detaylı saha incelemesi, ölçüm ve teknik analiz çalışmaları tamamlandı.</p>
+<span class="text-sm text-primary font-medium">15 Ocak 2023</span>
+</div>
+</div>
+<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
+<div class="flex-1 pl-8"></div>
+</div>
+<div class="flex items-center">
+<div class="flex-1 pr-8"></div>
+<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
+<div class="flex-1 pl-8">
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Tasarım ve Planlama</h3>
+<p class="text-gray-600 mb-3">Mimari projeye uygun asansör tasarımı ve malzeme seçimi gerçekleştirildi.</p>
+<span class="text-sm text-primary font-medium">1 Şubat 2023</span>
+</div>
+</div>
+</div>
+<div class="flex items-center">
+<div class="flex-1 pr-8 text-right">
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Şaft Hazırlığı</h3>
+<p class="text-gray-600 mb-3">Asansör şaftının hazırlanması ve altyapı çalışmalarının tamamlanması.</p>
+<span class="text-sm text-primary font-medium">15 Mart 2023</span>
+</div>
+</div>
+<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
+<div class="flex-1 pl-8"></div>
+</div>
+<div class="flex items-center">
+<div class="flex-1 pr-8"></div>
+<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
+<div class="flex-1 pl-8">
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Montaj ve Kurulum</h3>
+<p class="text-gray-600 mb-3">Makine grubu, kabin ve tüm sistem bileşenlerinin profesyonel montajı.</p>
+<span class="text-sm text-primary font-medium">10 Mayıs 2023</span>
+</div>
+</div>
+</div>
+<div class="flex items-center">
+<div class="flex-1 pr-8 text-right">
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Test ve Devreye Alma</h3>
+<p class="text-gray-600 mb-3">Kapsamlı testler, güvenlik kontrolleri ve resmi devreye alma işlemleri.</p>
+<span class="text-sm text-primary font-medium">25 Haziran 2023</span>
+</div>
+</div>
+<div class="w-4 h-4 bg-secondary rounded-full relative z-10"></div>
+<div class="flex-1 pl-8"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Customer Reviews -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Müşteri Yorumları</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400 text-lg">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<span class="ml-2 text-gray-600 text-sm">5.0</span>
+</div>
+<p class="text-gray-600 mb-4 leading-relaxed">
+"FD Asansör ekibi gerçekten profesyonel bir iş çıkardı. Asansörlerimiz çok sessiz çalışıyor ve tasarımı binamızın mimarisine mükemmel uyum sağlıyor. Kesinlikle tavsiye ederim."
+</p>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div class="ml-3">
+<p class="font-medium text-gray-900">Mehmet Özkan</p>
+<p class="text-sm text-gray-500">Bina Yöneticisi</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400 text-lg">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<span class="ml-2 text-gray-600 text-sm">5.0</span>
+</div>
+<p class="text-gray-600 mb-4 leading-relaxed">
+"Proje sürecinde her aşamada bilgilendirilmek çok güzeldi. Zamanında teslim ettiler ve kalite gerçekten çok yüksek. Bakım hizmetleri de mükemmel."
+</p>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center">
+<i class="ri-user-line text-secondary"></i>
+</div>
+<div class="ml-3">
+<p class="font-medium text-gray-900">Ayşe Demir</p>
+<p class="text-sm text-gray-500">Daire Sahibi</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400 text-lg">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<span class="ml-2 text-gray-600 text-sm">5.0</span>
+</div>
+<p class="text-gray-600 mb-4 leading-relaxed">
+"Teknoloji açısından çok gelişmiş sistemler kullanmışlar. Akıllı kontrol paneli ve enerji tasarrufu özelliklerinden çok memnunuz. Teşekkürler FD Asansör."
+</p>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div class="ml-3">
+<p class="font-medium text-gray-900">Can Yılmaz</p>
+<p class="text-sm text-gray-500">Mimar</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Similar Projects -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900">Benzer Projeler</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+<img src="./img/a1c400ef38d51131df3fec3d0b87db60.jpg" 
+alt="Ticari Merkez Asansörü" 
+class="w-full h-48 object-cover object-center">
+<div class="p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Ticari Merkez Asansörü</h3>
+<p class="text-gray-600 text-sm mb-3">İzmir Bornova - 2022</p>
+<div class="flex items-center justify-between">
+<span class="text-primary text-sm font-medium">Asansör Projesi</span>
+<i class="ri-arrow-right-line text-gray-400"></i>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+<img src="./img/7595290ba803a8e375000527ed06731d.jpg" 
+alt="Hastane Asansör Sistemi" 
+class="w-full h-48 object-cover object-center">
+<div class="p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Hastane Asansör Sistemi</h3>
+<p class="text-gray-600 text-sm mb-3">Antalya Muratpaşa - 2023</p>
+<div class="flex items-center justify-between">
+<span class="text-primary text-sm font-medium">Asansör Projesi</span>
+<i class="ri-arrow-right-line text-gray-400"></i>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+<img src="./img/026eb0b6f649578d51f6b7a0778ac6a1.jpg" 
+alt="Konut Kompleksi" 
+class="w-full h-48 object-cover object-center">
+<div class="p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-2">Konut Kompleksi</h3>
+<p class="text-gray-600 text-sm mb-3">Ankara Çankaya - 2023</p>
+<div class="flex items-center justify-between">
+<span class="text-secondary text-sm font-medium">İnşaat Projesi</span>
+<i class="ri-arrow-right-line text-gray-400"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-primary text-white rounded-3xl p-12">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold mb-6">Bu Proje Hakkında Bilgi Almak İster misiniz?</h2>
+<p class="text-blue-100 mb-8 leading-relaxed">
+Lüks rezidans asansörü projemiz hakkında detaylı bilgi almak, benzer bir proje için teklif almak veya teknik özellikler hakkında danışmanlık almak için bizimle iletişime geçin.
+</p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-xl text-secondary"></i>
+<div>
+<p class="text-sm text-blue-100">7/24 Destek Hattı</p>
+<a href="tel:+905432550133" class="text-lg font-semibold">+90 543 255 01 33</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-xl text-secondary"></i>
+<div>
+<p class="text-sm text-blue-100">E-posta</p>
+<a href="mailto:info@fdiskele.com" class="text-lg font-semibold">info@fdiskele.com</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center mb-6">
+<span class="text-3xl font-['Pacifico'] text-primary"><img src="img/logo.jpg" width="84" height="80" class="logo"></span>
+</div>
+<p class="text-gray-300 mb-6 leading-relaxed">
+25 yıllık deneyimimizle asansör ve inşaat sektöründe güvenilir çözümler sunuyoruz.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Hizmetlerimiz</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Asansör Montajı</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Bakım ve Onarım</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Modernizasyon</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">İnşaat Hizmetleri</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">İskele Sistemleri</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition-colors">Güvenlik Sistemleri</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Hızlı Bağlantılar</h3>
+<ul class="space-y-3">
+<li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Anasayfa</a></li>
+<li><a href="hakkimizda.html" data-readdy="true" class="text-gray-300 hover:text-white transition-colors">Hakkımızda</a></li>
+<li><a href="referanslar.html" class="text-gray-300 hover:text-white transition-colors">Referanslar</a></li>
+<li><a href="hizmetler.html" class="text-gray-300 hover:text-white transition-colors">Hizmetler</a></li>
+<li><a href="iletisim.html" data-readdy="true" class="text-gray-300 hover:text-white transition-colors">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">İletişim Bilgileri</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<i class="ri-map-pin-line text-secondary mt-1"></i>
+<div>
+<p class="text-gray-300">Şahintepe Mah. Kozan Bulvarı Ebiri Apt. No 250/D</p>
+<p class="text-gray-300">Sarıçam/Adana&nbsp;</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-secondary"></i>
+<a href="tel:+905432550133" class="text-gray-300 hover:text-white">+90 543 255 01 33</a>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-secondary"></i>
+<a href="mailto:info@fdiskele.com" class="text-gray-300 hover:text-white">info@fdiskele.com</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">© 2024 FD İskele Asansör ve İnşaat. Tüm hakları saklıdır.<a href="hakanyavuz.net.tr">Tasarım Yavuz Bilişim</a></p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script id="gallery-slider">
+document.addEventListener('DOMContentLoaded', function() {
+let currentSlide = 0;
+const slides = document.querySelectorAll('.gallery-slide');
+const totalSlides = slides.length;
+const currentSlideSpan = document.querySelector('.current-slide');
+const totalSlidesSpan = document.querySelector('.total-slides');
+const prevBtn = document.querySelector('.gallery-prev');
+const nextBtn = document.querySelector('.gallery-next');
+
+totalSlidesSpan.textContent = totalSlides;
+
+function showSlide(index) {
+slides.forEach((slide, i) => {
+slide.classList.toggle('active', i === index);
+});
+currentSlideSpan.textContent = index + 1;
+currentSlide = index;
+}
+
+function nextSlide() {
+showSlide((currentSlide + 1) % totalSlides);
+}
+
+function prevSlide() {
+showSlide((currentSlide - 1 + totalSlides) % totalSlides);
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+showSlide(0);
+});
+</script>
+
+<style>
+.gallery-slide {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-slide.active {
+opacity: 1;
+}
+
+.gallery-container {
+position: relative;
+height: 600px;
+}
+
+@media (max-width: 768px) {
+.gallery-container {
+height: 384px;
+}
+}
+</style>
+
+</body>
+</html>
